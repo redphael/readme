@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="./exomaths.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+		<title>Mathématiques | Exposé</title>
+	</head>
+	<body>
+		<h1>Platonic solid exercices</h1>
+		<div class="grandeb inline">
+			<h3 class="quest">Wich one is a platonic solid ?</h3>
+			<ul class="ques">
+				<li class="inline qor"><a href="#" class="qor inline" id="q1">. <p class="p inline">A:</p> A triangle</a></li>
+				<li class="qor inline"><a href="#" class="qor inline" id="q2">. <p class="inline p">B:</p> A rectangle</a></li>
+			</ul>
+			<ul class="que">
+				<li class="qor inline"><a href="#" class="qor inline" id="q3">. <p class="inline p">C:</p> A dodecahedron</a></li>
+				<li class="qor inline"><a href="#" class="qor inline" id="q4">. <p class="inline p">D:</p> The answer D</a></li>
+			</ul>
+		</div>
+		<script>
+
+			var userName = prompt('Entrez votre prénom :');
+
+			var bonrep = document.getElementById('q3');
+			var q1 = document.getElementById('q1')
+			var q2 = document.getElementById('q2');
+			var q4 = document.getElementById('q4');
+
+			bonrep.addEventListener('click' ,Messagebon);
+			q1.addEventListener('click' ,messfaux);
+			q2.addEventListener('click' ,messfaux);
+			q4.addEventListener('click' ,messfaux);
+
+			function Messagebon(){
+				alert("You're right " + userName + "! You've well learn the lesson.")
+			}
+			function messfaux(){
+				alert("Shame on you " + userName + "! You have not learn the lesson !")
+			}
+
+		</script>
+	</body>
+
+</html>
